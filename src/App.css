@@ -41,17 +41,11 @@ main {
   gap: 17px;
 }
 
-.form--label {
-  margin-bottom: 5px;
-}
-
 .form--input {
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
-  height: 35px;
-  width: 100%;
 }
 
 .form--button {
@@ -62,4 +56,8 @@ main {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.meme--image {
+  max-width: 100%;
 }
