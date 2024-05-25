@@ -13,6 +13,16 @@ function Meme () {
 
     const [allMemeImages, setAllMemesImage] = useState(memesData)
 
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => {
+            return {
+                ...prevMeme,
+                [name] : value
+            }
+        })
+    }
+
     function getMemeImage() {
     
         const memeArray = allMemeImages.data.memes
@@ -33,11 +43,17 @@ function Meme () {
         <div className="form">
             <input 
                 type="text"
+                name="topText"
+                value={meme.topText}
+                onChange={handleChange}
                 placeholder="Top text"
                 className="form--input"
             />
             <input 
                 type="text"
+                name="bottomText"
+                onChange={handleChange}
+                value={meme.bottomText}
                 placeholder="Bottom text"
                 className="form--input"
             />
@@ -48,7 +64,11 @@ function Meme () {
                 Get a new meme image 🖼
             </button>
         </div>
-        <img src={meme.randomImage} className="meme--image" />
+        <div className="meme">
+                <img src={meme.randomImage} className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+        </div>
     </main>
     )
 }
