@@ -12,10 +12,13 @@ function Meme () {
 
     const [allMemes, setAllMemes] = useState([])
 
-    useEffect(()=>{
-        fetch("https://api.imgflip.com/get_memes")
-            .then(res => res.json())
-            .then(data => setAllMemes(data.data.memes))
+    useEffect(()=>{ 
+        async function fetchData() {
+            const res = await fetch("https://api.imgflip.com/get_memes")
+            const data = await res.json()
+            setAllMemes(data.data.memes)
+        }
+        fetchData()
     }, [])
 
     function handleChange(event) {
