@@ -1,1 +1,1 @@
-A random Meme generator that allows you to add text to the meme images
+A random Meme generator that allows you to add text to the meme imagess
