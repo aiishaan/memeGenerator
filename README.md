@@ -22,14 +22,16 @@ The web app will be live soon
 
 2. Install dependencies:
 
+    ```bash
     npm install
 
 3. Start the server:
 
+    ```bash
     npm start
     Visit http://localhost:3000.
 
-    ## Usage
+## Usage
 
     Click "Generate Meme" for a random meme.
     Enter text in the "Top Text" and "Bottom Text" fields.
