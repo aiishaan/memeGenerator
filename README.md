@@ -29,7 +29,8 @@ The web app will be live soon
 
     ```bash
     npm start
-    Visit http://localhost:3000.
+
+Visit `http://localhost:3000`
 
 ## Usage
 
