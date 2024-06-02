@@ -18,7 +18,7 @@ The web app will be live soon
 
    ```bash
    git clone https://github.com/aiishaan/memeGenerator.git
-   cd memegenerator
+   cd memeGenerator
 
 2. Install dependencies:
 
@@ -28,7 +28,7 @@ The web app will be live soon
 3. Start the server:
 
     ```bash
-    npm start
+    npm run dev
 
 Visit `http://localhost:3000`
 
